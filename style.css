@@ -1,0 +1,45 @@
+.wrapper {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.image {
+    width: 50vw;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    transition: all 1s;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 7.5vw;
+    font-family: "Great Vibes", serif;
+    font-weight: 400;
+    color: red;
+
+}
+
+.trigger {
+    position: absolute;
+    left: -9999px;
+}
+
+.trigger:checked+.overlay {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+
+.poem {
+    font-size: 1vw;
+}
